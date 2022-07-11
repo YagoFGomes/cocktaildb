@@ -18,5 +18,5 @@ from django.urls import path, include
 from Cocktail import views as Cocktail_views
 
 urlpatterns = [
-    path('Home/', Cocktail_views.PaginaInicial),
+    path('HomePage/', Cocktail_views.PaginaInicial),
 ]

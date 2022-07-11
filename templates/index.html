@@ -37,10 +37,11 @@
       <div class="container-fluid m-4">
         <h1 class="display-5">Drinks Famosos</h1>
       </div>
+      {% autoescape off %}
 
-      <div class="container-fluid">
-        {{ drinks_famosos }}
-      </div>
+      {{ drinks_famosos }}
+
+      {% endautoescape %}
         
     </main>
    
