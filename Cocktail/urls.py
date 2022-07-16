@@ -16,7 +16,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from Cocktail import views as Cocktail_views
+from django.views.generic import RedirectView
 
 urlpatterns = [
+    path('', RedirectView.as_view(url='HomePage/')),
     path('HomePage/', Cocktail_views.PaginaInicial),
 ]
