@@ -21,4 +21,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     path('', RedirectView.as_view(url='HomePage/')),
     path('HomePage/', Cocktail_views.PaginaInicial),
+    path('drinks/<str:tipo>/', Cocktail_views.DrinksAlcoolicos),
 ]
